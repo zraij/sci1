@@ -2,7 +2,7 @@
    الصفحة تُجلب من الشبكة أولاً (حتى توصل التحديثات فوراً)، والنسخة المحفوظة تُستخدم عند انقطاع الإنترنت.
    صور الكتاب المشفّرة (img/*.bin) تُحفظ على الجهاز أول مرة وتُقرأ منه بعدها (سريع وبدون إنترنت).
    ملفات الحسابات (users.json) وطلبات Google وأي رابط خارجي لا تُخزَّن أبداً. */
-const VER = 'mvsa84fh';
+const VER = 'mvsbmgaw';
 const CACHE = 'sci1-pwa-' + VER, IMG = 'sci1-img-v1';
 const SHELL = ['./', './index.html', './install.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
