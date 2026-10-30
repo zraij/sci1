@@ -40,7 +40,7 @@ button:disabled{opacity:.6;cursor:wait}
 @keyframes bob{50%{transform:translateY(-16px) rotate(6deg)}}
 footer{position:relative;z-index:1;text-align:center;max-width:420px;margin:22px auto 0;color:#5E6E8A;font-size:13px;line-height:2}
 .wrap{width:100%;max-width:430px;margin-top:60px}
-.pwbox{position:relative}.pwbox input{padding-right:50px!important}.pwbox .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px!important;height:40px;margin:0!important;padding:0!important;border:0!important;border-radius:10px;background:transparent!important;box-shadow:none!important;color:inherit;opacity:.6;cursor:pointer;display:grid;place-items:center}.pwbox .eye:hover,.pwbox .eye.on{opacity:1}.pwbox .eye svg{width:22px;height:22px}.pwbox .eye .sl{display:none}.pwbox .eye.on .sl{display:inline}</style>
+.pwbox{position:relative}.pwbox input::-ms-reveal,.pwbox input::-ms-clear{display:none}.pwbox input{padding-right:50px!important}.pwbox .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px!important;height:40px;margin:0!important;padding:0!important;border:0!important;border-radius:10px;background:transparent!important;box-shadow:none!important;color:inherit;opacity:.6;cursor:pointer;display:grid;place-items:center}.pwbox .eye:hover,.pwbox .eye.on{opacity:1}.pwbox .eye svg{width:22px;height:22px}.pwbox .eye .sl{display:none}.pwbox .eye.on .sl{display:inline}</style>
 <script>
 const AU = (() => {
   const enc = new TextEncoder(), dec = new TextDecoder();
