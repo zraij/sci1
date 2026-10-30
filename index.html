@@ -40,7 +40,7 @@ button:disabled{opacity:.6;cursor:wait}
 @keyframes bob{50%{transform:translateY(-16px) rotate(6deg)}}
 footer{position:relative;z-index:1;text-align:center;max-width:420px;margin:22px auto 0;color:#5E6E8A;font-size:13px;line-height:2}
 .wrap{width:100%;max-width:430px;margin-top:60px}
-</style>
+.pwbox{position:relative}.pwbox input{padding-right:50px!important}.pwbox .eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px!important;height:40px;margin:0!important;padding:0!important;border:0!important;border-radius:10px;background:transparent!important;box-shadow:none!important;color:inherit;opacity:.6;cursor:pointer;display:grid;place-items:center}.pwbox .eye:hover,.pwbox .eye.on{opacity:1}.pwbox .eye svg{width:22px;height:22px}.pwbox .eye .sl{display:none}.pwbox .eye.on .sl{display:inline}</style>
 <script>
 const AU = (() => {
   const enc = new TextEncoder(), dec = new TextDecoder();
@@ -84,7 +84,7 @@ const AU = (() => {
 <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="#fff"/><circle cx="50" cy="50" r="46" fill="none" stroke="#2E9BE6" stroke-width="6"/><path d="M50 74c0-16 0-26 0-34" stroke="#2FBF71" stroke-width="6" stroke-linecap="round"/><path d="M50 52c-14 0-22-8-22-20 12 0 22 6 22 20z" fill="#2FBF71"/><path d="M50 44c0-13 9-21 23-21 0 13-9 21-23 21z" fill="#5ED58F"/><ellipse cx="50" cy="78" rx="20" ry="6" fill="#FFB31F"/><circle cx="74" cy="64" r="5" fill="#FF5A7A"/><circle cx="26" cy="64" r="4" fill="#8E6CFF"/><circle cx="30" cy="22" r="3" fill="#FFB31F"/></svg>
 <h1>العلوم</h1><p class="s">الصف الأول الابتدائي · الكتاب التفاعلي</p>
 <label for="u">اسم المستخدم</label><input class="ltr" type="text" id="u" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required>
-<label for="p">كلمة المرور</label><input class="ltr" type="password" id="p" name="password" autocomplete="current-password" required>
+<label for="p">كلمة المرور</label><div class="pwbox"><input class="ltr" type="password" id="p" name="password" autocomplete="current-password" required><button type="button" class="eye" tabindex="-1" aria-label="إظهار كلمة المرور" title="إظهار كلمة المرور" onclick="var i=this.previousElementSibling,s=i.type==='password';i.type=s?'text':'password';this.classList.toggle('on',s);this.title=s?'إخفاء كلمة المرور':'إظهار كلمة المرور';i.focus()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path class="sl" d="M4 4l16 16"/></svg></button></div>
 <label class="rem"><input type="checkbox" id="r" checked> تذكّرني على هذا الجهاز</label>
 <button id="b" type="submit">دخول 🚀</button><div class="err" id="e" role="alert"></div>
 <noscript><p class="err">يجب تفعيل JavaScript لفتح الصفحة.</p></noscript>
